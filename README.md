@@ -191,10 +191,20 @@ systemctl enable fstrim.timer
 systemctl enable NetworkManager
 ```
 
+# end
 
+---------------------------------------------------------------------------------------------------------------------------------
+# Credits
+[The Arch Wiki](https://wiki.archlinux.org/title/Installation_guide)
+[Arch install guide by D3SOX](https://arch.d3sox.me/) (By far the best arch install guide for beginners I've ever came across)
+A whoooole lot of youtube videos
+My own experience of reinstalling arch a bunch of times since I first started using Linux (November 2024).
 
 
 ---------------------------------------------------------------------------------------------------------------------------------
-Ignore
- sudo pacman -S dkms avahi eza git wget
- pacman -S rebuild-detector
+# Work in progress, ignore.
+sudo pacman -S dkms avahi eza git wget
+pacman -S rebuild-detector
+yay -S downgrade
+instructions for VirtualBox and VMWare
+fixing resolution in VMs using bootloader kernel parameters
