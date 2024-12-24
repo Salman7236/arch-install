@@ -6,7 +6,7 @@ instructions for myself
 pacman -Sy archlinux-keyring
 ```
 
-### If using archinstall, then it's good to update that too
+### If using archinstall, then updating archinstall can sometimes cause [issues](https://github.com/archlinux/archinstall/issues/2490#issuecomment-2561474713), so only update it if it doesn't work properly.
 ```sh
 pacman -Sy archinstall archlinux-keyring
 ```
