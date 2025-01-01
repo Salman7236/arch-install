@@ -207,19 +207,19 @@ systemctl enable NetworkManager
 
 ---------------------------------------------------------------------------------------------------------------------------------
 # Credits
-[The Arch Wiki](https://wiki.archlinux.org/title/Installation_guide)
-[Arch install guide by D3SOX](https://arch.d3sox.me/) (By far the best arch install guide for beginners I've ever came across)
-A whoooole lot of youtube videos
-My own experience of reinstalling arch a bunch of times since I first started using Linux (November 2024).
+* [The Arch Wiki](https://wiki.archlinux.org/title/Installation_guide)
+* [Arch install guide by D3SOX](https://arch.d3sox.me/) (By far the best arch install guide for beginners I've ever came across)
+* A whoooole lot of youtube videos
+* My own experience of reinstalling arch a bunch of times since I first started using Linux (November 2024).
 
 
 ---------------------------------------------------------------------------------------------------------------------------------
 # Work in progress, ignore.
 * instructions for VirtualBox and VMWare
 * fixing resolution in VMs using bootloader kernel parameters
-* writing automated script and maybe ask the user for somethings to share the script with others, give it a cool name like archfi, archery and other       great scripts lol.
 * instructions for zram generator instead of swap partition
 * btrfs snapper comaptible layout
 * sudo pacman -S dkms avahi eza git wget
 * pacman -S rebuild-detector
 * yay -S downgrade
+* writing automated script and maybe ask the user for somethings so other people can also use this script, give it a cool name like archfi, archery and    other great scripts lol.
