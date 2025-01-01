@@ -1,7 +1,7 @@
 # archinstall
 instructions for myself
 
-### Update keyring (Sometimes (if the ISO is older) keyrings are outdated and installation might not work. Very rare tho, but never hurts to update it.)
+### Update keyring (Sometimes (especially if the ISO is older) keyrings are outdated and installation might not work. Very rare tho, but never hurts to update it.)
 ```sh
 pacman -Sy archlinux-keyring
 ```
