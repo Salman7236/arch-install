@@ -33,6 +33,12 @@ Fastest way is to use to sgdisk
 ```sh
 sgdisk -n1:0:+1G -t1:ef00 -c1:EFI -N2 -t2:8304 -c2:ROOT /dev/sda
 ```
+* n(n) = partition number n with start and end sector (1gb in my case)
+* N(n) = partition number n with largest available size
+* t(n) = type for partition number n (ef00 for EFI and 8304 for linux x86-64 in my case)
+* c(n) = name of partition number n. (Not necessary to name a partition.)
+
+cgdisk method
 
 ```sh
 cgdisk
