@@ -1,7 +1,7 @@
 # archinstall
 instructions for myself
 
-### Update keyring (Sometimes (if the ISO is older) keyrings are outdated and installation might not work. Very rare tho)
+### Update keyring (Sometimes (if the ISO is older) keyrings are outdated and installation might not work. Very rare tho, but never hurts to upgdate it.)
 ```sh
 pacman -Sy archlinux-keyring
 ```
@@ -214,12 +214,12 @@ systemctl enable NetworkManager
 
 
 ---------------------------------------------------------------------------------------------------------------------------------
-# Work in progress, ignore.
+# To-do
 * instructions for VirtualBox and VMWare
 * fixing resolution in VMs using bootloader kernel parameters
 * instructions for zram generator instead of swap partition
 * btrfs snapper comaptible layout
-* sudo pacman -S dkms avahi eza git wget
+* sudo pacman -S dkms avahi eza git wget efivar
 * pacman -S rebuild-detector
 * yay -S downgrade
 * writing automated script and maybe ask the user for somethings so other people can also use this script, give it a cool name like archfi, archery and    other great scripts lol.
