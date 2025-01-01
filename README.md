@@ -28,6 +28,12 @@ lsblk
 ```
 
 ### Start partitioning
+
+Fastest way is to use to sgdisk
+```sh
+sgdisk -n1:0:+1G -t1:ef00 -c1:EFI -N2 -t2:8304 -c2:ROOT /dev/sda
+```
+
 ```sh
 cgdisk
 ```
@@ -208,3 +214,4 @@ pacman -S rebuild-detector
 yay -S downgrade
 instructions for VirtualBox and VMWare
 fixing resolution in VMs using bootloader kernel parameters
+writing automated script
