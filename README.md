@@ -215,3 +215,4 @@ yay -S downgrade
 instructions for VirtualBox and VMWare
 fixing resolution in VMs using bootloader kernel parameters
 writing automated script
+instructions for zram generator instead of swap partition
