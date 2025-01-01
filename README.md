@@ -209,10 +209,11 @@ My own experience of reinstalling arch a bunch of times since I first started us
 
 ---------------------------------------------------------------------------------------------------------------------------------
 # Work in progress, ignore.
-sudo pacman -S dkms avahi eza git wget
-pacman -S rebuild-detector
-yay -S downgrade
 instructions for VirtualBox and VMWare
 fixing resolution in VMs using bootloader kernel parameters
 writing automated script
 instructions for zram generator instead of swap partition
+btrfs snapper comaptible layout
+sudo pacman -S dkms avahi eza git wget
+pacman -S rebuild-detector
+yay -S downgrade
