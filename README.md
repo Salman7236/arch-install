@@ -89,12 +89,20 @@ pacman -Syy
 > [!WARNING]  
 > There's no need to include the "u" after the "syy" in the above command because we are in a live ISO and can't upgrade the system. But on an already installed system, you MUST include the "u" in every "Syu" or "Syyu" command. [Read more here on why you should never do partial upgrades.](https://wiki.archlinux.org/title/System_maintenance#Partial_upgrades_are_unsupported)
 
-### Base installation (replace "refind" with bootloader of your choice)
+### Base installation
 ```sh
 pacstrap -K /mnt base linux linux-firmware sof-firmware base-devel intel-ucode e2fsprogs dosfstools nano neovim less man-db man-pages fastfetch networkmanager openssh os-prober refind git bash-completion mtools efibootmgr gptfdisk dkms reflector expac pacman-contrib
 ```
+*  Replace ```linux``` with the [kernel](https://wiki.archlinux.org/title/Kernel) of your choice.
+*  You can exclude the ```linux-firmware``` and ```sof-firmware``` packages if installing in a VM. ```sof-firmare``` is usually only needed for audio support in laptops.
+*  Replace ```intel-ucode``` with ```amd-ucode``` if you have an AMD CPU.
+*  If you chose file systems other than "ext4" and "VFAT", then replace ```e2fsprogs``` and ```dosfstools``` with the packages needed for your chosen file system. See [File systems](https://wiki.archlinux.org/title/File_systems#Types_of_file_systems)
+*  Exclude ```os-prober``` if not dual booting.
+*  Replace ```refind``` with the bootloader of your choice.
+*  Replace ```nano``` and ```neovim``` with [text editor(s)](https://wiki.archlinux.org/title/List_of_applications/Documents#Text_editors) of your choice
 
-### Generate filesystem table
+
+###. Generate filesystem table
 ```sh
 genfstab -U /mnt >> /mnt/etc/fstab
 ```
