@@ -31,7 +31,7 @@ lsblk
 
 Fastest way is to use to sgdisk
 ```sh
-sgdisk -n1:0:+1G -t1:ef00 -c1:EFI -N2 -t2:8304 -c2:ROOT /dev/sda
+sgdisk -n1:0:+1G -t1:ef00 -c1:EFI -N2 -t2:8304 -c2:ROOT /dev/nvme0n1
 ```
 * n(n) = partition number n with start and end sector (1gb in my case)
 * N(n) = partition number n with largest available size
@@ -59,12 +59,12 @@ Code for Linux x86-64 root
 ### Formatting
 Boot (EFI)
 ```sh
-mkfs.fat -F 32 /dev/sda1
+mkfs.fat -F 32 /dev/nvme0n1p1
 ```
 Swap
 ```sh
-mkswap /dev/sda2
-swapon /dev/sda2
+mkswap /dev/nvme0n1p2
+swapon /dev/nvme0n1p2
 ```
 Root
 ```sh
@@ -74,7 +74,7 @@ mkfs.ext4 /dev/sda3
 ### Mounting
 Boot (EFI)
 ```sh
-mount --mkdir /dev/sda1 /mnt/boot
+mount --mkdir /dev/nvme0n1p1 /mnt/boot
 ```
 Root
 ```sh
@@ -166,7 +166,7 @@ pacman -Syu
 
 ### Install bootloader (I'm using refind, these installation instructions are modified because when installing refind from chroot, [it adds kernel parameters of the iso instead of our instlled system.](https://wiki.archlinux.org/title/REFInd#Installation_with_refind-install_script)  
 ```sh
-refind-install --usedefault /dev/sda1 --alldrivers
+refind-install --usedefault /dev/nvme0n1p1 --alldrivers
 mkrlconf
 nano /boot/refind_linux.conf
 ```
@@ -174,7 +174,7 @@ remove first two lines
 ```sh
 nano /boot/EFI/BOOT/refind.conf
 ```
-go to archlinux section and replace UUID with path to efi partitio (e.g. /dev/sda1)
+go to archlinux section and replace UUID with path to efi partitio (e.g. /dev/nvme0n1p1)
 
 ### Add users (replace "user" with your username)
 ```sh
