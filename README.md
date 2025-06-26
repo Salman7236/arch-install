@@ -1,7 +1,7 @@
-# archinstall
+# arch-install
 instructions for myself
 
-### Update keyring (Sometimes (especially if the ISO is older) keyrings are outdated and installation might not work. Very rare tho, but never hurts to update it.)
+### Update keyring (Sometimes (especially if the ISO is older), the keyring is outdated and installation might not work. Very rare tho, but never hurts to update it.)
 ```sh
 pacman -Sy archlinux-keyring
 ```
@@ -172,7 +172,7 @@ Then refresh the repos
 pacman -Syu
 ```
 
-### Install bootloader (I'm using refind, these installation instructions are modified because when installing refind from chroot, [it adds kernel parameters of the iso instead of our instlled system.](https://wiki.archlinux.org/title/REFInd#Installation_with_refind-install_script)  
+### Install bootloader (I'm using refind, these installation instructions are modified because when installing refind from chroot, [it adds kernel parameters of the iso instead of our installed system.](https://wiki.archlinux.org/title/REFInd#Installation_with_refind-install_script)  
 ```sh
 refind-install --usedefault /dev/nvme0n1p1 --alldrivers
 mkrlconf
@@ -182,7 +182,7 @@ remove first two lines
 ```sh
 nano /boot/EFI/BOOT/refind.conf
 ```
-go to archlinux section and replace UUID with path to efi partitio (e.g. /dev/nvme0n1p1)
+go to archlinux section and replace UUID with path to efi partition (e.g. /dev/nvme0n1p1)
 
 ### Add users (replace "user" with your username)
 ```sh
@@ -226,7 +226,7 @@ systemctl enable NetworkManager
 * instructions for VirtualBox and VMWare
 * fixing resolution in VMs using bootloader kernel parameters
 * instructions for zram generator instead of swap partition
-* btrfs snapper comaptible layout
+* btrfs snapper compatible layout
 * sudo pacman -S dkms avahi eza git wget efivar
 * pacman -S rebuild-detector
 * yay -S downgrade
