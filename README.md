@@ -8,7 +8,7 @@ Instructions for myself.
 pacman -Sy archlinux-keyring
 ```
 
-### If using archinstall, then updating archinstall can sometimes cause [issues](https://github.com/archlinux/archinstall/issues/2490#issuecomment-2561474713), [(2)](https://www.reddit.com/r/archlinux/comments/w1pmlz/comment/jer48b4/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) so only update it if it doesn't work properly without updating, or if the latest version has a feature you need. If you do update, and run into issues, you might need to update more packages. See the issues linked above for help.
+### If using archinstall, then updating archinstall can sometimes cause [issues](https://github.com/archlinux/archinstall/issues/2490#issuecomment-2561474713), [(2)](https://www.reddit.com/r/archlinux/comments/w1pmlz/comment/jer48b4/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) so only update it if it doesn't work properly without updating, or if the latest version has a feature you need. If you do update, and run into issues, you might need to update more packages. See the issues linked above for help
 
 ```sh
 pacman -Sy archinstall archlinux-keyring
@@ -129,7 +129,7 @@ pacstrap -K /mnt base linux linux-firmware sof-firmware base-devel intel-ucode e
 - Replace `refind` with the bootloader of your choice.
 - Replace `nano` and `neovim` with [text editor(s)](https://wiki.archlinux.org/title/List_of_applications/Documents#Text_editors) of your choice
 
-###. Generate filesystem table
+### . Generate filesystem table
 
 ```sh
 genfstab -U /mnt >> /mnt/etc/fstab
@@ -178,9 +178,9 @@ nano /etc/hosts
 add these lines:
 
 ```sh
-127.0.0.1	localhost
-::1		localhost
-127.0.0.1	arch.localdomain	arch
+127.0.0.1 localhost
+::1  localhost
+127.0.0.1 arch.localdomain arch
 ```
 
 ### Enable parallel downloads
@@ -276,7 +276,7 @@ systemctl enable NetworkManager
 # Credits
 
 - [The Arch Wiki](https://wiki.archlinux.org/title/Installation_guide)
-- [Arch install guide by D3SOX](https://arch.d3sox.me/) (By far the best arch install guide for beginners I've ever came across)
+- [Arch install guide by D3SOX](https://arch.d3sox.me/) (By far the best arch install guide for beginners I've ever come across.)
 - A whoooole lot of youtube videos
 - My own experience of reinstalling arch a bunch of times since I first started using Linux (November 2024).
 
