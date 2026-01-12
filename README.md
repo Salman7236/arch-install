@@ -277,6 +277,7 @@ systemctl enable NetworkManager
 
 - [The Arch Wiki](https://wiki.archlinux.org/title/Installation_guide)
 - [Arch install guide by D3SOX](https://arch.d3sox.me/) (By far the best arch install guide for beginners I've ever come across.)
+- [Modern Arch linux installation guide](https://gist.github.com/mjkstra/96ce7a5689d753e7a6bdd92cdc169bae)
 - A whoooole lot of youtube videos
 - My own experience of reinstalling arch a bunch of times since I first started using Linux (November 2024).
 
