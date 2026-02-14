@@ -1,3 +1,5 @@
+# Moved to [Gist](https://gist.github.com/Salman7236/400d006d4bc6200f7231a8b164c36942)
+
 # Arch Installation
 
 Instructions for myself.
